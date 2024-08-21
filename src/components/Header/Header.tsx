@@ -15,7 +15,7 @@ export const Header = () => {
               {isNameDisabled ? (
                 <Image src={image} alt={name} width={150} height={150} />
               ) : (
-                name
+                <span className="hidden md:inline-block">{name}</span>
               )}
             </Link>
           ))}

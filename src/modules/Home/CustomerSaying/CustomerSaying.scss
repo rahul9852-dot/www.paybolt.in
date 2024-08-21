@@ -1,5 +1,5 @@
 .customer-saying-wrapper {
-  @apply text-primary p-10;
+  @apply text-primary p-10 overflow-hidden;
 
   .customer-saying {
     @apply container mx-auto px-2 flex flex-col justify-center items-center gap-10;
@@ -28,7 +28,7 @@
 }
 
 .mySwiper {
-  @apply w-[1050px] py-10 !important;
+  @apply lg:w-[1050px] w-[365px] py-10 mx-0 !important;
 
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
     @apply w-[29px];
