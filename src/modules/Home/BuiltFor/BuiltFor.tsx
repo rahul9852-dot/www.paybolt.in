@@ -3,7 +3,7 @@
 import { ReactTyped } from 'react-typed';
 import { INDIA_IN_DIFF_LANG } from '@/constants/common.constant';
 
-import './BuiltFor.css';
+import './BuiltFor.scss';
 
 export const BuiltFor = () => {
   return (

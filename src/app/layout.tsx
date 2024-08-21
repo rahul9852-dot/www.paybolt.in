@@ -4,7 +4,7 @@ import { Header } from '@/components/Header';
 import { primaryFont } from '@/utils/fonts';
 import { cn } from '@/utils/cn';
 
-import './globals.css';
+import './globals.scss';
 
 export const metadata = metadataConfig[MetadataRoutes.HOME];
 

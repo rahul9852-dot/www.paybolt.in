@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { routes } from '@/constants/routes.constant';
 
-import './Header.css';
+import './Header.scss';
 
 export const Header = () => {
   return (

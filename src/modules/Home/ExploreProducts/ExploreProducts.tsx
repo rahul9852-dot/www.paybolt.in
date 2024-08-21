@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { HOME_PRODUCTS } from '@/constants/common.constant';
 
-import './ExploreProducts.css';
+import './ExploreProducts.scss';
 
 export const ExploreProducts = () => {
   return (

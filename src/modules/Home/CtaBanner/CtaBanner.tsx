@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
-import './CtaBanner.css';
+import './CtaBanner.scss';
 
 export const CtaBanner = () => {
   return (

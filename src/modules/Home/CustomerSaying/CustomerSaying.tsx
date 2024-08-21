@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import './CustomerSaying.css';
+import './CustomerSaying.scss';
 
 export const CustomerSaying = () => {
   return (

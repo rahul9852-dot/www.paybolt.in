@@ -1,6 +1,7 @@
 import { HOME_FEATURES } from '@/constants/common.constant';
-import './Features.css';
 import Image from 'next/image';
+
+import './Features.scss';
 
 export const Features = () => {
   return (

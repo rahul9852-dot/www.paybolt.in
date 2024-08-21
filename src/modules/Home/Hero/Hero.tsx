@@ -6,7 +6,7 @@ import heroImage from '@public/images/hero-img.png';
 import { BuiltFor } from '@modules/Home/BuiltFor';
 import { Swiper } from '@modules/Home/Swiper';
 
-import './Hero.css';
+import './Hero.scss';
 
 export const Hero = () => {
   return (
