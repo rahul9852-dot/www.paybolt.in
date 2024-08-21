@@ -1,0 +1,22 @@
+.typing-wrapper {
+  @apply py-2 font-semibold text-3xl bg-background text-primary min-w-60 text-center -skew-x-12 relative;
+
+  .before,
+  .after {
+    @apply absolute top-0 bottom-0 inline-block w-[1px] bg-primary;
+  }
+
+  .before {
+    @apply left-2;
+    &::after {
+      @apply content-[''] absolute left-1 h-full top-0 w-[2px] bg-primary;
+    }
+  }
+
+  .after {
+    @apply right-2;
+    &::after {
+      @apply content-[''] absolute right-1 h-full top-0 w-[2px] bg-primary;
+    }
+  }
+}

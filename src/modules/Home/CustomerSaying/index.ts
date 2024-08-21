@@ -1,0 +1,1 @@
+export { CustomerSaying } from './CustomerSaying';

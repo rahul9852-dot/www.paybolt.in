@@ -1,0 +1,7 @@
+.my-swiper {
+  @apply pb-10 !important;
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply w-[29px];
+  }
+}

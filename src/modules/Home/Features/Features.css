@@ -1,0 +1,42 @@
+.features-wrapper {
+  @apply text-primary min-h-[600px] flex flex-col justify-start items-center bg-primary-50 py-10;
+
+  .features {
+    @apply container mx-auto px-2 flex flex-col justify-center items-center;
+
+    .top {
+      @apply flex flex-col justify-center items-center gap-4;
+
+      .all-in-one {
+        @apply uppercase text-lg relative inline-block;
+
+        &::before {
+          @apply content-[''] absolute h-7 w-7 -top-1.5 -left-2.5 rounded-full border-2 border-[#2f5fff97] opacity-80 select-none;
+          box-shadow: 0 0 5px #2f5eff, inset 0 0 5px #2f5eff;
+        }
+      }
+    }
+
+    .bottom {
+      @apply w-full grid grid-cols-1 gap-y-5 gap-x-0 lg:grid-cols-3 place-items-center mt-12 lg:mt-[120px];
+      .feat-card {
+        @apply h-[160px] w-full rounded-[18px] relative;
+        background: linear-gradient(
+          to right,
+          #bc7c14,
+          #f7efe5,
+          #bc7c14,
+          #f7efe5
+        );
+
+        &:nth-child(2) {
+          @apply w-full lg:w-[calc(100%+70px)] relative lg:-top-1/2 z-10;
+        }
+
+        .border-style {
+          @apply absolute inset-[2px] rounded-2xl bg-primary z-[1] py-5 px-10 flex flex-col justify-center items-start gap-2;
+        }
+      }
+    }
+  }
+}

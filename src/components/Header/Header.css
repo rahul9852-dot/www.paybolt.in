@@ -1,0 +1,21 @@
+.header-wrapper {
+  @apply bg-background/50 backdrop-blur-md text-foreground fixed top-0 left-0 w-full z-header px-2;
+
+  .header {
+    @apply container mx-auto h-20 flex justify-between items-center;
+
+    .nav-list {
+      @apply flex items-center gap-5;
+    }
+    .nav-item {
+      @apply hover:text-primary transition-all;
+    }
+
+    .btn-login {
+      @apply relative;
+      .login-bottom-line {
+        @apply absolute -bottom-3 left-0;
+      }
+    }
+  }
+}

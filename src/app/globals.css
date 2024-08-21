@@ -3,31 +3,102 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  /**
+   --primary: hsl(272 50% 31%);
+  --secondary: hsl(270 34% 47%);
+  --accent: hsl(219 100% 97%);
+  --background: hsl(0 0% 96%);
+  --foreground: hsl(0 0% 12%);
+   */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  /* Swiper */
+  --swiper-pagination-bottom: 0px;
+  --swiper-pagination-bullet-width: 18px;
+  --swiper-pagination-bullet-height: 7px;
+  --swiper-pagination-bullet-border-radius: 100px;
+  --swiper-pagination-bullet-inactive-color: hsl(272 50% 31% / 0.45);
+  --swiper-pagination-color: hsl(270 34% 47%);
+
+  --primary: 272 50% 31%;
+  --secondary: 270 34% 47%;
+  --accent: 219 100% 97%;
+  --background: 0 0% 96%;
+  --foreground: 0 0% 12%;
+
+  --primary-hue: 272;
+  --primary-saturation: 50%;
+  --primary-lightness: 31%;
+
+  --secondary-hue: 270;
+  --secondary-saturation: 34%;
+  --secondary-lightness: 47%;
+
+  --accent-hue: 219;
+  --accent-saturation: 100%;
+  --accent-lightness: 97%;
+
+  --background-hue: 0;
+  --background-saturation: 0%;
+  --background-lightness: 96%;
+
+  --foreground-hue: 0;
+  --foreground-saturation: 0%;
+  --foreground-lightness: 7%;
+
+  --primary-50: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) + 50%);
+  --primary-100: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) + 40%);
+  --primary-200: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) + 30%);
+  --primary-300: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) + 20%);
+  --primary-400: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) + 10%);
+  --primary-500: var(--primary-hue), var(--primary-saturation),
+    var(--primary-lightness);
+  --primary-600: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) - 10%);
+  --primary-700: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) - 20%);
+  --primary-800: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) - 30%);
+  --primary-900: var(--primary-hue), var(--primary-saturation),
+    calc(var(--primary-lightness) - 40%);
+
+  --secondary-50: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 50%);
+  --secondary-100: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 40%);
+  --secondary-200: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 30%);
+  --secondary-300: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 20%);
+  --secondary-400: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 10%);
+  --secondary-500: var(--secondary-hue), var(--secondary-saturation),
+    var(--secondary-lightness);
+  --secondary-600: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) - 10%);
+  --secondary-700: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) - 20%);
+  --secondary-800: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) - 30%);
+  --secondary-900: var(--secondary-hue), var(--secondary-saturation),
+    calc(var(--secondary-lightness) - 40%);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: hsl(var(--foreground-rgb));
+  background: hsl(var(--background));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14];
 }
