@@ -9,7 +9,7 @@ export const Features = () => {
       <div className="features">
         <div className="top">
           <span className="all-in-one">ALL-IN-ONE SOLUTION</span>
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-3xl font-semibold text-center">
             Simplify your business payments with PayBolt
           </h3>
           <p className="text-sm leading-normal max-w-[700px] text-center font-semibold">

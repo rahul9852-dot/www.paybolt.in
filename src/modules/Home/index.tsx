@@ -1,3 +1,4 @@
+import { ConnectedBanking } from './ConnectedBanking';
 import { CtaBanner } from './CtaBanner';
 import { CustomerSaying } from './CustomerSaying';
 import { ExploreProducts } from './ExploreProducts';
@@ -12,6 +13,7 @@ export const Home = () => {
       <Features />
       <ExploreProducts />
       <CustomerSaying />
+      <ConnectedBanking />
     </>
   );
 };

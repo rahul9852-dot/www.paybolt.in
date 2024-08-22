@@ -1,0 +1,1 @@
+export { ConnectedBanking } from './ConnectedBanking';

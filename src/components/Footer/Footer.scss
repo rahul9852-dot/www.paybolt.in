@@ -1,0 +1,42 @@
+.footer-wrapper {
+  @apply bg-[#784FA1] text-background pt-10;
+  .footer {
+    @apply container mx-auto px-2 py-10 grid grid-cols-1 xl:grid-cols-3 justify-center items-start gap-10;
+
+    .footer-left {
+      @apply flex flex-col justify-center items-center xl:items-start gap-5;
+    }
+
+    .footer-mid {
+      @apply grid grid-cols-1 xl:grid-cols-2 gap-5 xl:gap-0 justify-center items-center;
+
+      .col {
+        @apply flex flex-col justify-center items-center xl:items-start gap-5;
+      }
+    }
+
+    .footer-right {
+      @apply flex flex-col xl:items-start items-center justify-center gap-5;
+
+      .subscribe-input {
+        @apply border border-background rounded-md focus-visible:outline-none border-none text-background placeholder:text-background/80 px-4 py-2 bg-[#bc7c14] rounded-r-none h-10;
+      }
+
+      .subs-btn {
+        @apply bg-background text-primary rounded-r-md px-4 py-2 focus-visible:outline-none h-10;
+      }
+
+      .social-links {
+        @apply flex items-center gap-5;
+      }
+    }
+  }
+
+  .post-footer {
+    @apply border-t;
+
+    p {
+      @apply container mx-auto px-2 text-center py-3 text-sm font-semibold;
+    }
+  }
+}

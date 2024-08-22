@@ -10,7 +10,7 @@
       @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-12;
 
       .product-item {
-        @apply rounded-[17px] overflow-hidden bg-background;
+        @apply rounded-[17px] overflow-hidden bg-background w-full;
 
         .product-details {
           @apply p-7 pt-3 flex flex-col gap-3;
