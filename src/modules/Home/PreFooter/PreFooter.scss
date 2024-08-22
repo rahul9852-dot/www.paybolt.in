@@ -4,15 +4,25 @@
   .pre-footer {
     @apply w-full max-w-[320px] xs:max-w-[22rem] sm:max-w-lg 2xl:max-w-xl mx-auto flex flex-col justify-center items-center gap-5 py-7 px-12 rounded-[30px] -skew-x-6 md:-skew-x-12 relative z-10;
 
-    background: linear-gradient(
-      to bottom,
-      hsl(var(--primary-400)),
-      40%,
-      hsl(var(--primary-50))
-    );
+    & {
+      background: linear-gradient(
+        to bottom,
+        hsl(var(--primary-400)),
+        40%,
+        hsl(var(--primary-50))
+      );
+    }
   }
   .border-style {
     @apply w-full max-w-[320px] xs:max-w-[22rem] sm:max-w-lg 2xl:max-w-xl mx-auto flex flex-col justify-center items-center gap-5 py-7 px-12 rounded-[30px] -skew-x-6 md:-skew-x-12 absolute z-10 -top-[2px] -bottom-[2px] left-1/2 -translate-x-1/2;
     background: linear-gradient(to right, #bc7c14, #f7efe5, #bc7c14, #f7efe5);
+  }
+
+  .text-with-icon {
+    @apply grid gap-1 items-center;
+
+    & {
+      grid-template-columns: 18px 1fr;
+    }
   }
 }
