@@ -1,6 +1,6 @@
 const BusinessSetUp = () =>{
   return (
-    <div className="pt-10">
+    <div className="pt-10 mb-20">
         <div className="business-banner grid grid-cols-2 items-center justify-between px-4 py-4">
           <div className=" flex flex-col items-center justify-center px-2 py-2">
             <h1 className=" text-4xl  text-primary mb-4">Scale-up your Business</h1>
