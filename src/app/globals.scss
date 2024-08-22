@@ -100,5 +100,5 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14];
+  @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14] hover:bg-secondary-100;
 }
