@@ -29,5 +29,4 @@ body:has(.contact-banner) {
   @apply bg-gradient-to-r from-primary-50 to-primary-400;
   clip-path: polygon(0 0, 100% 60px, 100% calc(100% - 60px), 0 100%);
   height: 400px;
-  // background: linear-gradient(to bottom right, theme('colors.primary.50'), theme('colors.primary.DEFAULT'));
 }

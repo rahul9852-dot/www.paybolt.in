@@ -1,0 +1,35 @@
+.money-transfer-banner {
+
+
+  background: linear-gradient(to right, #f7faff, #f7faff);
+
+
+  // background: linear-gradient(to right,
+  //   hsla(var(--secondary-100), 0.5),
+  //   hsla(var(--primary-100), 0.5));
+
+
+
+  // @apply bg-gradient-to-r from-secondary-50 to-primary-50;
+
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2px), calc(100% - 100px) 100%, 0 calc(100% - 50px));
+  position: relative;
+}
+
+// Override header styles when on contact page
+body:has(.money-transfer-banner) {
+  header {
+    background-color: transparent !important;
+    z-index: 10;
+
+    * {
+      color: hsl(var(--foreground));
+    }
+  }
+}
+
+.money-tansfer-features-banner {
+  @apply bg-gradient-to-r from-primary-50 to-primary-400;
+  clip-path: polygon(0 0, 100% 60px, 100% calc(100% - 60px), 0 100%);
+  height: 400px;
+}
