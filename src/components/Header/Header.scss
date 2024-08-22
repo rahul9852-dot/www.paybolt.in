@@ -1,8 +1,8 @@
 .header-wrapper {
-  @apply bg-background/50 backdrop-blur-md text-foreground fixed top-0 left-0 w-full z-header px-2;
+  @apply bg-background/50 backdrop-blur-md text-foreground fixed top-0 left-0 w-full z-header;
 
   .header {
-    @apply container mx-auto h-20 flex justify-between items-center;
+    @apply container mx-auto h-20 flex justify-between items-center px-2;
 
     .nav-list {
       @apply flex items-center gap-5;

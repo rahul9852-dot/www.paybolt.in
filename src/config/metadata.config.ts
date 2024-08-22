@@ -1,10 +1,15 @@
 import { Metadata } from 'next';
-import { MetadataRoutes } from '../enums/route.enum';
+import { MetadataRoutes } from '@/enums/route.enum';
 
 export const metadataConfig: Partial<Record<MetadataRoutes, Metadata>> = {
   [MetadataRoutes.HOME]: {
     title: 'PayBolt | Payment Gateway | QR Collection | Payout | UPI Payment',
     description: 'PayBolt Technologies - Home',
+    keywords:
+      'PayBolt, Payment Gateway, QR Collection, Payout, UPI Payment, India',
+    icons: {
+      icon: '/images/logos/paybolt-icon.png',
+    },
   },
   [MetadataRoutes.QR_COLLECTION]: {
     title: 'QR Collection | PayBolt',

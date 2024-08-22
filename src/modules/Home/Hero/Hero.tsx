@@ -13,15 +13,15 @@ export const Hero = () => {
     <section className="hero-wrapper">
       <div className="hero">
         <div className="hero-left">
-          <h2 className="text-balance text-primary font-semibold text-4xl">
+          <h2 className="text-primary font-semibold text-4xl text-center md:text-start">
             Advanced Payment Solutions
           </h2>
-          <h2 className="text-balance font-semibold text-4xl">
+          <h2 className="font-semibold text-4xl text-center md:text-start">
             for India's finest disruptors
           </h2>
 
-          <div className="mt-8 flex flex-col justify-center items-start gap-8">
-            <p className="text-sm">
+          <div className="mt-8 flex flex-col justify-center text-center md:items-start gap-8">
+            <p className="text-sm text-center md:text-start">
               Quick Payments | Seamless Integration | Top-tier UPI stack
             </p>
             <Link className="btn" href="/register">
@@ -36,20 +36,23 @@ export const Hero = () => {
             items={[
               <Image
                 src={heroImage}
+                className="object-center"
                 alt="Hero Image"
-                width={500}
+                width={700}
                 height={500}
               />,
               <Image
                 src={heroImage}
+                className="object-center"
                 alt="Hero Image"
-                width={500}
+                width={700}
                 height={500}
               />,
               <Image
                 src={heroImage}
+                className="object-center"
                 alt="Hero Image"
-                width={500}
+                width={700}
                 height={500}
               />,
             ]}

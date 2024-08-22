@@ -6,6 +6,9 @@ import payoutService from '@public/images/payout-service.png';
 import posService from '@public/images/pos-service.png';
 import instantBanking from '@public/images/instant-banking.png';
 
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 export const INDIA_IN_DIFF_LANG = [
   'INDIA',
   'ভারত',
@@ -82,5 +85,28 @@ export const HOME_PRODUCTS = [
       'Open bank accounts instantly and start transacting without any delays.',
     imageSrc: instantBanking,
     href: '/products',
+  },
+];
+
+export const FOOTER_SOCIAL_LINKS = [
+  {
+    name: 'Twitter',
+    href: '/',
+    icon: FaXTwitter,
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/paybolt-in/',
+    icon: FaLinkedinIn,
+  },
+  {
+    name: 'Instagram',
+    href: '/',
+    icon: FaInstagram,
+  },
+  {
+    name: 'Facebook',
+    href: '/',
+    icon: FaFacebookF,
   },
 ];

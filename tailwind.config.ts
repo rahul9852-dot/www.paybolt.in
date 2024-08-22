@@ -41,6 +41,9 @@ const config: Config = {
       zIndex: {
         header: '100',
       },
+      screens: {
+        xs: '376px',
+      },
     },
   },
   plugins: [],

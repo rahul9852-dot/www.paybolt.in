@@ -42,7 +42,7 @@ export const CustomerSaying = () => {
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => (
-            <SwiperSlide key={i} className="p-[2px]">
+            <SwiperSlide key={i * i * i} className="p-[2px]">
               <div className="card">
                 <Image
                   src={profile1}
