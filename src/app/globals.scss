@@ -97,6 +97,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
   .drag-none {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -107,7 +108,7 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14] max-w-max mx-auto md:mx-0;
+  @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14] max-w-max mx-auto md:mx-0 hover:bg-secondary-100;
 }
 
 img {
