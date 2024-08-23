@@ -7,6 +7,7 @@ import logoLightFull from '@public/images/logos/light-full.svg';
 
 import './Footer.scss';
 import { FOOTER_SOCIAL_LINKS } from '@/constants/common.constant';
+import LightFullIcon from '@public/Icons/LightFullIcon';
 
 export const Footer = () => {
   return (
@@ -14,7 +15,7 @@ export const Footer = () => {
       <div className="footer">
         <div className="footer-left">
           <Link href="/" className="logo">
-            <Image src={logoLightFull} alt="PayBolt" width={200} height={100} />
+            <LightFullIcon className='w-200 h-200' />
           </Link>
           <p className="text-center xl:text-start">
             PayBolt Technologies Private Limited 504, 1st floor, Sector 3, HSR
