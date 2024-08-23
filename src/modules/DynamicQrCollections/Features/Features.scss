@@ -1,0 +1,9 @@
+.features-inner-wrapper {
+  @apply bg-primary-50 py-32 mt-20;
+
+  clip-path: polygon(0 0, 100% 60px, 100% calc(100% - 60px), 0 100%);
+
+  .features-inner {
+    @apply container mx-auto px-2;
+  }
+}

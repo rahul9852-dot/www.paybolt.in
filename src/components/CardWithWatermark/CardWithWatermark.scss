@@ -5,4 +5,10 @@
     @apply content-[''] absolute bottom-1 -right-5 h-24 w-24 opacity-20;
     background: url('/images/logos/paybolt-icon.png') no-repeat center/contain;
   }
+
+  .card {
+    @apply grid items-center gap-2;
+
+    grid-template-columns: 40px 1fr;
+  }
 }

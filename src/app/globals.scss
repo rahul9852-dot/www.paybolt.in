@@ -109,6 +109,24 @@ body {
   .btn {
     @apply px-6 py-3 rounded-md bg-primary-50 text-primary font-semibold flex items-center justify-center gap-2 shadow shadow-[#BC7C14] max-w-max mx-auto md:mx-0 hover:bg-secondary-100 transition-all;
   }
+
+  .clip-left {
+    clip-path: polygon(
+      0 120px,
+      100% 0,
+      100% calc(100% + 120px),
+      0 calc(100% + 120px)
+    ) !important;
+  }
+
+  .clip-right {
+    clip-path: polygon(
+      0 0,
+      100% 120px,
+      100% calc(100% + 120px),
+      0 calc(100% + 120px)
+    ) !important;
+  }
 }
 
 img {

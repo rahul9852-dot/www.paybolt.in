@@ -4,11 +4,11 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { Features } from '@modules/UpiQrCollections';
 import { CustomerSaying } from '@modules/Home/CustomerSaying';
 import { ProductCard } from './ProductCard';
+import { PRODUCTS_FEATURES } from '@/constants/products.constant';
 
 import productHero from '@public/images/products-hero.png';
 
 import './Products.scss';
-import { PRODUCTS_FEATURES } from '@/constants/products.constant';
 
 export const Products = () => {
   return (
