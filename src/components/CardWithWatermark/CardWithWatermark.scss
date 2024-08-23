@@ -1,0 +1,8 @@
+.card-with-watermark-wrapper {
+  @apply flex flex-col gap-6 justify-center items-start py-8 px-10 bg-primary-50 rounded-lg min-h-[180px] relative;
+
+  &::before {
+    @apply content-[''] absolute bottom-1 -right-5 h-24 w-24 opacity-20;
+    background: url('/images/logos/paybolt-icon.png') no-repeat center/contain;
+  }
+}

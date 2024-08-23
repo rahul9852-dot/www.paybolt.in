@@ -1,3 +1,10 @@
+import { Hero, Features } from '@/modules/UpiQrCollections';
+
 export default () => {
-  return <section className="pt-20">Products - UPI QR Collection</section>;
+  return (
+    <section className="pt-20">
+      <Hero />
+      <Features />
+    </section>
+  );
 };
