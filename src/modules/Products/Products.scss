@@ -1,0 +1,51 @@
+.products-wrapper {
+  @apply pt-20 min-h-dvh;
+
+  .products {
+    @apply mr-2 xs:mr-8 sm:mr-2 xl:mr-[88px] 2xl:container 2xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-16 justify-between items-start mt-10;
+
+    .img {
+      @apply object-center block self-end 2xl:w-full;
+    }
+  }
+
+  .benefits-realized {
+    @apply pt-40 pb-20 bg-secondary text-background -mt-20;
+
+    .benefits {
+      @apply container mx-auto px-2;
+
+      .para {
+        @apply font-semibold grid;
+
+        grid-template-columns: 45px 1fr;
+
+        .num {
+          @apply text-primary mr-2 w-8 h-8 flex justify-center items-center bg-secondary-50 rounded-full relative top-0.5 font-semibold;
+
+          &::after {
+            @apply content-[''] absolute inset-[1px] border border-secondary rounded-full;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-card-wrapper {
+  @apply flex flex-col gap-6 justify-start items-start py-8 px-10 bg-primary-50 rounded-lg min-h-[300px] relative;
+
+  &::before {
+    @apply content-[''] absolute top-1/4 -right-5 h-24 w-24 opacity-20;
+    background: url('/images/logos/paybolt-icon.png') no-repeat center/contain;
+  }
+
+  .feat {
+    @apply text-sm font-semibold text-primary relative ml-7;
+
+    &::before {
+      @apply content-[''] inline-block w-5 h-5 mr-1 absolute -left-7 top-[2px];
+      background: url('/images/next.svg') no-repeat center/contain;
+    }
+  }
+}

@@ -5,11 +5,10 @@ import {
 } from 'react-icons/ai';
 import { BsGraphUpArrow } from 'react-icons/bs';
 import { IoIosCard } from 'react-icons/io';
-import { IoCheckmarkDoneCircle, IoSettings } from 'react-icons/io5';
+import { IoSettings } from 'react-icons/io5';
 import { MdOutlineSupportAgent } from 'react-icons/md';
-import { PiClockCountdownFill, PiGearFine } from 'react-icons/pi';
+import { PiGearFine } from 'react-icons/pi';
 import { RiShoppingBasketLine } from 'react-icons/ri';
-import { RxCounterClockwiseClock } from 'react-icons/rx';
 import { TbDeviceAnalytics } from 'react-icons/tb';
 
 export const FEATURES = [

@@ -2,13 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { CardWithWatermark } from '@/components/CardWithWatermark';
+import { FEATURES } from '@/constants/upi-qr-collections.constant';
 
 import heroImage from '@public/images/upi-qr-hero.png';
 
 import './Hero.scss';
-import { IoIosCard } from 'react-icons/io';
-import { CardWithWatermark } from '@/components/CardWithWatermark';
-import { FEATURES } from '@/constants/upi-qr-collections.constant';
 
 export const Hero = () => {
   return (
