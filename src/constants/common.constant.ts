@@ -1,4 +1,4 @@
-import successSign from '@public/images/success-sign.svg';
+import SuccessSign from '@public/Icons/SuccessSignIcon';
 import upiQr from '@public/images/upi-qr.png';
 import dynamicQr from '@public/images/dynamic-qr.png';
 import moneyTransfer from '@public/images/money-transfer.png';
@@ -28,19 +28,19 @@ export const HOME_FEATURES = [
     title: 'Connect all your bank accounts',
     description:
       'Connect your current accounts to PayBolt to easily send and receive payments',
-    icon: successSign,
+    icon: SuccessSign,
   },
   {
     title: 'Create bills and invoices',
     description:
       'Create bills and invoices on PayBolt or import them from your accounting software',
-    icon: successSign,
+    icon: SuccessSign,
   },
   {
     title: 'Reconcile payments automatically',
     description:
       'Pay bills or get paid using your connected bank accounts and reconcile payments',
-    icon: successSign,
+    icon: SuccessSign,
   },
 ];
 

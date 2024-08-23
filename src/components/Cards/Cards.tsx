@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import PayboltIcon from '@public/images/logos/paybolt-icon.png';
+import PayboltIcon from '@public/images/paybolt-icon.png';
 
 interface CardItem {
-  icon?: string;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
 }
@@ -20,7 +20,7 @@ const Cards: React.FC<CardsProps> = ({ items }) => {
         <div key={index} className="bg-primary-50 p-6 rounded-lg shadow-md relative overflow-hidden h-[250px] flex flex-col">
           <div className="flex items-center mb-4">
             {item.icon && (
-              <Image src={item.icon} alt={item.title} width={40} height={40} />
+              <item.icon className='w-[40px] h-[40px]' />
             )}
             <h3 className="text-xl font-semibold ml-4">{item.title}</h3>
           </div>

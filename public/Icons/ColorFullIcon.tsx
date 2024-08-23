@@ -5,7 +5,7 @@
 import React from 'react';
 
 const ColorFullIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg width="157" height="60" viewBox="0 0 157 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+  <svg width="157" height="60" viewBox="0 0 157 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...props}>
   <rect width="157" height="53" fill="url(#pattern0_189_41)"/>
   <defs>
   <pattern id="pattern0_189_41" patternContentUnits="objectBoundingBox" width="1" height="1">

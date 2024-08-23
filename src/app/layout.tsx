@@ -8,6 +8,7 @@ import { primaryFont } from '@/utils/fonts';
 import { cn } from '@/utils/cn';
 
 import './globals.scss';
+import Accordion from '@/components/Accordion/Accordion';
 
 export const metadata = metadataConfig[MetadataRoutes.HOME];
 
@@ -18,6 +19,7 @@ export default ({ children }: Readonly<PropsWithChildren>) => {
         className={cn(primaryFont.className, 'antialiased text-foreground')}>
         <Header />
         {children}
+        <Accordion/>
         <Footer />
       </body>
     </html>

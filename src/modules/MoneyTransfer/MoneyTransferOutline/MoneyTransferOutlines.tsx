@@ -11,7 +11,7 @@ import VectorSvg3 from "@public/Icons/VectorSvg3";
 
 const MoneyTransferOutlines = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 conatiner mx-auto px-2 bg-background">
       <div className="flex flex-col items-center justify-center mb-4">
         <div className="flex flex-col justify-center w-full mb-4 px-4">
           <h1 className="text-primary text-2xl md:text-4xl font-semibold mb-4 md:mb-6 text-center leading-tight">
@@ -25,9 +25,10 @@ const MoneyTransferOutlines = () => {
           <Cards items={MoneyTransferOutlinesConstants} />
         </div>
 
+
         <div className="flex items-center justify-center py-16 px-4">
           <h2 className="text-primary text-2xl md:text-4xl font-semibold mb-4 md:mb-6 text-center leading-tight">
-            How it works
+            Generate payment links in few simple steps
           </h2>
         </div>
         

@@ -56,7 +56,8 @@ export const Header = () => {
                   </svg>
                 )}
                 <Link key={name} href={path} className="nav-item">
-                  <Image src={image} alt={name} width={150} height={150} />
+
+                  <image className='w-[150px] h-[150px]' />
                 </Link>
               </div>
             ) : (

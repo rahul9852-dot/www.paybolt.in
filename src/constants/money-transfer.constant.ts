@@ -8,6 +8,17 @@ import QuickModeIcon from "@public/Icons/QuickModeIcon";
 import SalePriceTagIcon from "@public/Icons/SalePriceTagIcon";
 import CheckIcon from "@public/Icons/CheckLock";
 import CustomerIcon from "@public/Icons/CustomerSupport";
+
+import QuickPay from "@public/images/quick-access.png";
+import CustomerExperience from "@public/images/CustomerExperience.png";
+import Cart from "@public/images/Cart.png";
+import IndustryRates from "@public/images/industry-rate.png";
+import InsightsValue from "@public/images/valuable-insights.png";
+import PaymentOptions from "@public/images/payment-options.png";
+import InstantSettlement from "@public/images/payment-received.png";
+import FraudMangement from "@public/images/fraudMangement.png";
+import { StaticImageData } from "next/image";
+
 interface CardItem {
 
   icon?: React.FC<React.SVGProps<SVGSVGElement>>
@@ -76,6 +87,48 @@ export const MoneyTransferFeaturesCardConstants: CardFeatures[] =[
     description:'Send and receive money using mobile, web, or API integrations.'
   },
 ]
+
+interface OnlineMoneyTransferFeatures{
+  imgTag: StaticImageData;
+  description:string;
+}
+
+
+export const OnlineMTConstants:OnlineMoneyTransferFeatures[]=[
+  {
+    imgTag: QuickPay,
+    description:'Quick and easy checkout process'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Better customer experience'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Reduces cart abandonment'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Industry best success rates'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Gather valuable insights'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Wide range of payment options'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Instant settlement'
+  },
+  {
+    imgTag: QuickPay,
+    description:'Better fraud management'
+  },
+];
+
 
 
 
