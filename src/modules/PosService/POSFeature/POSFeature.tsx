@@ -1,18 +1,18 @@
 import { BenefitCard } from "@/components/BenefitCard";
 import { GradientCard } from "@/components/GradientCard";
-import { MoneyTransferBenefitsConstant, MoneyTransferFeaturesCardConstants } from "@/constants/money-transfer.constant";
+import { PosServiceBeneFits, PosServiceConstants } from "@/constants/pos-services.constant";
 import { CgArrowRight } from "react-icons/cg";
 
-const MoneyTransferFeatures = () => {
+const POSFeature = () => {
   return (
-    <div className="money-transfer-features-banner">
+    <div className="pos-features-banner">
       <div className="features-content">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-primary text-2xl md:text-4xl font-semibold mb-8 text-center leading-tight max-w-3xl mx-auto">
             Features
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-            {MoneyTransferFeaturesCardConstants.map(feat => (
+            {PosServiceConstants.map(feat => (
               <GradientCard key={feat.title} {...feat} />
             ))}
           </div>
@@ -25,8 +25,9 @@ const MoneyTransferFeatures = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-          {MoneyTransferBenefitsConstant.map((benefits, idx) => (
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto py-10">
+          {PosServiceBeneFits.map((benefits, idx) => (
             <BenefitCard
               key={benefits.title}
               title={benefits.title}
@@ -40,4 +41,4 @@ const MoneyTransferFeatures = () => {
   )
 }
 
-export default MoneyTransferFeatures;
+export default POSFeature;

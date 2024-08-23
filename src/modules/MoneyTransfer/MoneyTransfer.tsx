@@ -2,8 +2,7 @@ import MoneyTransferBanner from "./MoneyTransferBanner/MoneyTransferBanner";
 import './MoneyTransfer.scss'
 import MoneyTransferOutlines from "./MoneyTransferOutline/MoneyTransferOutlines";
 import MoneyTransferFeatures from "./MoneyTransferFeatures/MoneyTransferFeatures";
-import MAdvantage from "./MAdvantage/MAdvantage";
-import Accordion from "@/components/Accordion/Accordion";
+import PGAdvantage from "../../components/PGAdvantage/PGAdvantage";
 const MoneyTransfer = () =>{
 
   return (
@@ -13,7 +12,7 @@ const MoneyTransfer = () =>{
       </div>
       <MoneyTransferOutlines/>
       <MoneyTransferFeatures/>
-      <MAdvantage/>
+      <PGAdvantage/>
     </>
   )
 }

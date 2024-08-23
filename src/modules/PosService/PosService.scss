@@ -1,10 +1,10 @@
-.money-transfer-banner {
+.pos-banner {
   background: linear-gradient(to right, #f7faff, #f7faff);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2px), calc(100% - 100px) 100%, 0 calc(100% - 50px));
   position: relative;
 }
 
-body:has(.money-transfer-banner) {
+body:has(.pos-banner) {
   header {
     background-color: transparent !important;
     z-index: 10;
@@ -15,7 +15,7 @@ body:has(.money-transfer-banner) {
   }
 }
 
-.money-transfer-features-banner {
+.pos-features-banner {
   @apply bg-gradient-to-r from-primary-50 to-primary-400;
   position: relative;
   padding: 120px 0;

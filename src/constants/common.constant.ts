@@ -1,3 +1,4 @@
+"use client"
 import SuccessSign from '@public/Icons/SuccessSignIcon';
 import upiQr from '@public/images/upi-qr.png';
 import dynamicQr from '@public/images/dynamic-qr.png';

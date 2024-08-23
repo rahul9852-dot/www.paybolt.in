@@ -1,3 +1,4 @@
+"use client"
 import { HOME_FEATURES } from '@/constants/common.constant';
 import Image from 'next/image';
 

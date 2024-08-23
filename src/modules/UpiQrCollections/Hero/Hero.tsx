@@ -9,6 +9,7 @@ import './Hero.scss';
 import { IoIosCard } from 'react-icons/io';
 import { CardWithWatermark } from '@/components/CardWithWatermark';
 import { FEATURES } from '@/constants/upi-qr-collections.constant';
+import PGAdvantage from '@/components/PGAdvantage/PGAdvantage';
 
 export const Hero = () => {
   return (

@@ -100,34 +100,55 @@ export const OnlineMTConstants:OnlineMoneyTransferFeatures[]=[
     description:'Quick and easy checkout process'
   },
   {
-    imgTag: QuickPay,
+    imgTag: CustomerExperience,
     description:'Better customer experience'
   },
   {
-    imgTag: QuickPay,
+    imgTag: Cart,
     description:'Reduces cart abandonment'
   },
   {
-    imgTag: QuickPay,
+    imgTag: IndustryRates,
     description:'Industry best success rates'
   },
   {
-    imgTag: QuickPay,
+    imgTag: InsightsValue,
     description:'Gather valuable insights'
   },
   {
-    imgTag: QuickPay,
+    imgTag: PaymentOptions,
     description:'Wide range of payment options'
   },
   {
-    imgTag: QuickPay,
+    imgTag: InstantSettlement,
     description:'Instant settlement'
   },
   {
-    imgTag: QuickPay,
+    imgTag: FraudMangement,
     description:'Better fraud management'
   },
 ];
+
+export interface MoneyTransferBenefitsProps{
+  title: string;
+  description: string;
+}
+
+
+export const MoneyTransferBenefitsConstant:MoneyTransferBenefitsProps[]=[
+  {
+    title: 'Payment processing',
+    description:'Enhance customer experience with fast payment processing.',
+  },
+  {
+    title:'Security',
+    description:'Improve security for all transactions'
+  },
+  {
+    title:'Multiple payment',
+    description:'Offer multiple payment options to customers'
+  }
+]
 
 
 
