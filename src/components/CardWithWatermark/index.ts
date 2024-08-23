@@ -1,0 +1,1 @@
+export { CardWithWatermark } from './CardWithWatermark';

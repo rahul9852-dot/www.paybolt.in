@@ -19,7 +19,7 @@ export const Header = () => {
     <header className="header-wrapper">
       <nav className="header">
         <ul className="nav-list">
-          {routes.map(({ name, path, image, isNameDisabled }) =>
+          {routes.map(({ name, path, Icon, isNameDisabled }) =>
             isNameDisabled ? (
               <div
                 key={name}
@@ -56,8 +56,7 @@ export const Header = () => {
                   </svg>
                 )}
                 <Link key={name} href={path} className="nav-item">
-
-                  <image className='w-[150px] h-[150px]' />
+                  <Icon  />
                 </Link>
               </div>
             ) : (
