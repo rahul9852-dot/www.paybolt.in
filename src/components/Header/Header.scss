@@ -12,10 +12,14 @@
     }
 
     .btn-login {
-      @apply relative;
+      @apply relative font-semibold;
       .login-bottom-line {
         @apply absolute -bottom-3 left-0;
       }
     }
+  }
+
+  .header-overlay {
+    @apply fixed top-20 left-0 w-full h-[calc(100dvh-80px)] bg-background/80 backdrop-blur-md z-[99];
   }
 }

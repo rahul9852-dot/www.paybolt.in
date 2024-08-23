@@ -1,0 +1,29 @@
+.steps-wrapper {
+  @apply text-background py-32 -mt-32 relative clip-left;
+  background: linear-gradient(to bottom, #7a4fa2, 98%, #7a4fa2cb);
+
+  .steps {
+    @apply container mx-auto px-2 grid grid-cols-1 md:grid-cols-2 place-items-center gap-10;
+  }
+  .left {
+    @apply pt-20 w-full;
+
+    .list {
+      @apply text-lg flex flex-col items-start justify-center gap-5 w-full;
+
+      .item {
+        @apply mb-2 grid place-items-center gap-3 relative;
+
+        grid-template-columns: 30px 1fr;
+
+        .num {
+          @apply font-semibold bg-primary-50 h-[28px] w-[28px] grid place-items-center text-sm rounded-full not-italic text-[#7a4fa2] relative;
+
+          &::after {
+            @apply content-[''] absolute inset-[1px] border border-[#7a4fa2] rounded-full;
+          }
+        }
+      }
+    }
+  }
+}
