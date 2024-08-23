@@ -1,0 +1,20 @@
+.benefit-card {
+  @apply rounded-lg bg-[#774ea0] text-background p-10 flex flex-col gap-5 shadow-lg relative;
+
+  .phase {
+    @apply bg-secondary-100 text-primary w-fit absolute left-0 top-3 py-1 pl-3 pr-4;
+
+    span {
+      @apply text-sm font-semibold relative block;
+
+      &:last-child {
+        @apply text-base bg-secondary-100 rounded-full absolute -right-5 top-1/2 -translate-y-1/2 flex justify-center items-center w-9 h-9;
+      }
+    }
+  }
+
+  &::before {
+    @apply content-[''] absolute bottom-1 -right-5 h-24 w-24;
+    background: url('/images/logos/watermark.svg') no-repeat center/contain;
+  }
+}

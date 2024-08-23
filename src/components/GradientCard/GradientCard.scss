@@ -1,0 +1,36 @@
+.gradient-card {
+  @apply rounded-lg grid justify-center items-start p-10 gap-5 shadow-lg relative;
+  grid-template-columns: 80px 1fr;
+  background: linear-gradient(
+    140deg,
+    #f7f2fe,
+    #f7f2fe,
+    #e4d0fd,
+    #d6b3b8,
+    #d6b3b8,
+    #e4d0fd,
+    #f7f2fe
+  );
+
+  &::before {
+    @apply content-[''] absolute -inset-[2px] rounded-[10px] -z-[1];
+    background: linear-gradient(140deg, #daa652, hsl(var(--primary)));
+  }
+
+  .icon {
+    @apply text-primary block w-16 h-16;
+  }
+
+  .title {
+    @apply text-2xl font-semibold relative;
+
+    .arrow {
+      @apply absolute -top-3 inline-block text-primary;
+    }
+  }
+
+  .watermark {
+    @apply w-32 h-32 absolute top-5 left-2 opacity-20;
+    background: url('/images/logos/paybolt-icon.png') no-repeat center/contain;
+  }
+}
