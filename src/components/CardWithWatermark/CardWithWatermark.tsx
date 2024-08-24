@@ -15,7 +15,7 @@ export const CardWithWatermark = ({
 }: Props) => {
   return (
     <article className="card-with-watermark-wrapper">
-      <div className="flex items-center gap-2">
+      <div className="card">
         <Icon className="text-4xl text-primary" />
         <span className="text-lg font-semibold">{title}</span>
       </div>

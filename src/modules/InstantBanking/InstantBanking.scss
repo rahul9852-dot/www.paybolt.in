@@ -1,0 +1,50 @@
+.instant-banking-banner {
+  background: linear-gradient(to right, #f7faff, #f7faff);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2px), calc(100% - 100px) 100%, 0 calc(100% - 50px));
+  position: relative;
+}
+
+body:has(.instant-banking-banner) {
+  header {
+    background-color: transparent !important;
+    z-index: 10;
+
+    * {
+      color: hsl(var(--foreground));
+    }
+  }
+}
+
+// .money-transfer-features-banner {
+//   @apply bg-gradient-to-r from-primary-50 to-primary-400;
+//   position: relative;
+//   padding: 120px 0;
+//   clip-path: polygon(0 0, 100% 80px, 100% calc(100% - 40px), 0 100%);
+
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     background: inherit;
+//   }
+
+//   &::before {
+//     top: 0;
+//     height: 80px;
+//     clip-path: polygon(0 0, 100% 100%, 100% 0, 0 0);
+//   }
+
+//   &::after {
+//     bottom: 0;
+//     height: 40px;
+//     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+//   }
+
+//   .features-content {
+//     position: relative;
+//     z-index: 1;
+//     padding: 0 20px;
+//   }
+// }

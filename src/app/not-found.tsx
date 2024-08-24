@@ -5,7 +5,7 @@ export default () => {
   return (
     <section className="pt-20 h-[55dvh]">
       <div className="container h-full px-2 mx-auto flex justify-center items-center flex-col">
-        <h1 className="text-4xl font-bold text-primary">
+        <h1 className="text-4xl font-bold text-primary text-center">
           404 - Page Not Found
         </h1>
         <p className="mt-5">The page you are looking for does not exist.</p>
