@@ -6,5 +6,6 @@ module.exports = {
     path: '/_next/image',
     loader: 'default',
   },
+  
   // ... other config options
 }

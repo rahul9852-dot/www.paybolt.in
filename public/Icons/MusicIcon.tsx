@@ -1,29 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 
 const MusicIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
  <svg width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
-<circle cx="82" cy="82" r="75.5" fill="#C18EFF" stroke="#E1CAFD" stroke-width="13"/>
-<circle cx="82" cy="82" r="49.5" fill="#522877" stroke="#AB77DF" stroke-width="9"/>
+<circle cx="82" cy="82" r="75.5" fill="#C18EFF" stroke="#E1CAFD" strokeWidth="13"/>
+<circle cx="82" cy="82" r="49.5" fill="#522877" stroke="#AB77DF" strokeWidth="9"/>
 <rect x="54" y="52" width="60" height="60" fill="url(#pattern0_237_3)"/>
 <defs>
 <pattern id="pattern0_237_3" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -36,9 +16,3 @@ const MusicIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 );
 
 export default MusicIcon;
-
-
-
-
-
-

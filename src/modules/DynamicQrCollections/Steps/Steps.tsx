@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 import stepImg from '@public/images/steps.png';
-import logoLightFull from '@public/images/logos/light-full.svg';
+// import logoLightFull from '@public/images/logos/light-full.svg';
 import { cn } from '@/utils/cn';
 
 import './Steps.scss';
@@ -22,13 +22,13 @@ export const Steps = ({ className, image, children, heading }: Props) => {
         <div className="left">
           <h3 className="text-3xl font-semibold max-w-md text-left pb-5">
             {heading}&nbsp;&nbsp;
-            <Image
+            {/* <Image
               src={logoLightFull}
               alt="PayBolt"
               width={200}
               height={100}
               className="inline-block"
-            />
+            /> */}
           </h3>
           {children}
           <Link href="/" className="btn mt-10">

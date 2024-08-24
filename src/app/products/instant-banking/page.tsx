@@ -1,6 +1,6 @@
-import InstantBankingBanner from "@/modules/InstantBanking/InstantBankingBanner/InstantBankingBanner";
+import InstantBanking from "@/modules/InstantBanking/InstantBanking";
 export default () => {
-  return <section className="pt-20">
-    <InstantBankingBanner/>
+  return <section>
+    <InstantBanking/>
   </section>;
 };
