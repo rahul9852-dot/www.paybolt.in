@@ -1,1 +1,1 @@
-export { ConnectedBanking } from './ConnectedBanking';
+export { ConnectedBanking } from "./ConnectedBanking";

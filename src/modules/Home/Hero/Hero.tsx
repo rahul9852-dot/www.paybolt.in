@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from "next/link";
+import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import heroImage from '@public/images/hero-img.png';
-import { BuiltFor } from '@modules/Home/BuiltFor';
-import { Swiper } from '@modules/Home/Swiper';
+import heroImage from "@public/images/hero-img.png";
+import { BuiltFor } from "@modules/Home/BuiltFor";
+import { Swiper } from "@modules/Home/Swiper";
 
-import './Hero.scss';
+import "./Hero.scss";
 
 export const Hero = () => {
   return (

@@ -1,13 +1,10 @@
-
-import { ContactUs } from "@/modules/ContactUs"
-const Contact = () =>{
-
+import { ContactUs } from "@/modules/ContactUs";
+const Contact = () => {
   return (
     <div>
-      <ContactUs/>
+      <ContactUs />
     </div>
-  )
-}
+  );
+};
 
 export default Contact;
-

@@ -1,3 +1,8 @@
+import InstantBanking from "@/modules/InstantBanking/InstantBanking";
 export default () => {
-  return <section className="pt-20">Products - Instant Banking</section>;
+  return (
+    <section>
+      <InstantBanking />
+    </section>
+  );
 };

@@ -1,0 +1,18 @@
+import React from "react";
+
+const ArrowLineIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="68"
+    height="12"
+    viewBox="0 0 68 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 5.99999L10 11.7735L10 0.226492L0 5.99999ZM68 5L9 4.99999L9 6.99999L68 7L68 5Z"
+      fill="#774EA0"
+    />
+  </svg>
+);
+
+export default ArrowLineIcon;

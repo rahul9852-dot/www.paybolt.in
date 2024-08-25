@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
+import Link from "next/link";
+import Image from "next/image";
 
-import { HOME_PRODUCTS } from '@/constants/common.constant';
+import { HOME_PRODUCTS } from "@/constants/common.constant";
 
-import './ExploreProducts.scss';
+import "./ExploreProducts.scss";
 
 export const ExploreProducts = () => {
   return (
@@ -26,7 +27,8 @@ export const ExploreProducts = () => {
                 <p className="text-sm text-foreground/70">{description}</p>
                 <Link
                   href={href}
-                  className="text-xs text-background bg-primary/90 px-3 py-1 rounded-full w-fit mt-3">
+                  className="text-xs text-background bg-primary/90 px-3 py-1 rounded-full w-fit mt-3"
+                >
                   View More
                 </Link>
               </div>

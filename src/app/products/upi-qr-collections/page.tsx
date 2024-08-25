@@ -1,4 +1,4 @@
-import { Hero, Features } from '@/modules/UpiQrCollections';
+import { Hero, Features } from "@/modules/UpiQrCollections";
 
 export default () => {
   return (

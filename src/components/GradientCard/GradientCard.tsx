@@ -1,13 +1,14 @@
-import { IconType } from 'react-icons';
-import arrow from '@public/images/arrow.svg';
+import { IconType } from "react-icons";
+import arrow from "@public/images/arrow.svg";
 
-import './GradientCard.scss';
-import Image from 'next/image';
+import "./GradientCard.scss";
+import Image from "next/image";
 
 interface Props {
   title: string;
   description: string;
-  icon: IconType;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
+  classNames?: string;
 }
 
 export const GradientCard = ({ description, icon: Icon, title }: Props) => {

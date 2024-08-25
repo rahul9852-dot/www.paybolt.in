@@ -1,3 +1,5 @@
+import PosService from "@/modules/PosService/PosService";
+
 export default () => {
-  return <section className="pt-20">Products - POS Devices</section>;
+  return <PosService />;
 };

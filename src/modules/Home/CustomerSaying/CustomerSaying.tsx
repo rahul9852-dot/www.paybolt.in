@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
-import { SwiperSlide, Swiper } from 'swiper/react';
+import Image from "next/image";
+import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
+import { SwiperSlide, Swiper } from "swiper/react";
 
-import profile1 from '@public/images/profile1.png';
+import profile1 from "@public/images/profile1.png";
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-import './CustomerSaying.scss';
+import "./CustomerSaying.scss";
 
 export const CustomerSaying = () => {
   return (
@@ -20,10 +20,10 @@ export const CustomerSaying = () => {
           Customer Saying
         </h3>
         <Swiper
-          effect={'coverflow'}
+          effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={'auto'}
+          slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -40,8 +40,9 @@ export const CustomerSaying = () => {
             clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="mySwiper">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => (
+          className="mySwiper"
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
             <SwiperSlide key={i * i * i} className="p-[2px]">
               <div className="card">
                 <Image

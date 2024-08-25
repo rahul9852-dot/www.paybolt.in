@@ -1,0 +1,51 @@
+.instant-banking-banner {
+  background: linear-gradient(to right, #f7faff, #f7faff);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 2px),
+    calc(100% - 100px) 100%,
+    0 calc(100% - 50px)
+  );
+  position: relative;
+}
+
+body:has(.instant-banking-banner) {
+  header {
+    background-color: transparent !important;
+    z-index: 10;
+
+    * {
+      color: hsl(var(--foreground));
+    }
+  }
+}
+
+.instant-banking-verification {
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  padding: 5% 0;
+}
+
+.verification-points {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    border-left: 2px dotted rgba(255, 255, 255, 0.5);
+  }
+}
+
+.number-circle {
+  position: relative;
+  z-index: 1;
+}
+
+.instant-banking-integration {
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  padding: 5% 0;
+}

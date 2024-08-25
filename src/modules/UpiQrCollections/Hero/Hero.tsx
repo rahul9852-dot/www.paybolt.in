@@ -1,13 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { CardWithWatermark } from '@/components/CardWithWatermark';
-import { FEATURES } from '@/constants/upi-qr-collections.constant';
-
-import heroImage from '@public/images/upi-qr-hero.png';
-
-import './Hero.scss';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { CardWithWatermark } from "@/components/CardWithWatermark";
+import { FEATURES } from "@/constants/upi-qr-collections.constant";
+import heroImage from "@public/images/upi-qr-hero.png";
+import "./Hero.scss";
 
 export const Hero = () => {
   return (
@@ -49,7 +47,7 @@ export const Hero = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {FEATURES.map(feature => (
+          {FEATURES.map((feature) => (
             <CardWithWatermark key={feature.title} {...feature} />
           ))}
         </div>

@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import connectedBanking from '@public/images/connected-banking.png';
-import logoLightFull from '@public/images/logos/light-full.svg';
-import { PreFooter } from '@modules/Home/PreFooter';
+import connectedBanking from "@public/images/connected-banking.png";
+// import logoLightFull from '@public/images/logos/light-full.svg';
+import { PreFooter } from "@modules/Home/PreFooter";
 
-import './ConnectedBanking.scss';
+import "./ConnectedBanking.scss";
 
 export const ConnectedBanking = () => {
   return (
@@ -15,13 +15,13 @@ export const ConnectedBanking = () => {
         <div className="left">
           <h3 className="text-3xl font-semibold max-w-md text-left pb-5">
             Smart connected banking APIs with&nbsp;&nbsp;
-            <Image
+            {/* <Image
               src={logoLightFull}
               alt="PayBolt"
               width={200}
               height={100}
               className="inline-block"
-            />
+            /> */}
           </h3>
           <ol className="list">
             <li className="item">

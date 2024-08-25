@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { CardWithWatermark } from '@/components/CardWithWatermark';
-import { DYNAMIC_FEATURES } from '@/constants/dynamic-qr-collections.constant';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { CardWithWatermark } from "@/components/CardWithWatermark";
+import { DYNAMIC_FEATURES } from "@/constants/dynamic-qr-collections.constant";
 
-import heroImage from '@public/images/dynamic-qr-hero.png';
+import heroImage from "@public/images/dynamic-qr-hero.png";
 
-import './Hero.scss';
+import "./Hero.scss";
 
 export const Hero = () => {
   return (
@@ -50,7 +50,7 @@ export const Hero = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {DYNAMIC_FEATURES.map(feature => (
+          {DYNAMIC_FEATURES.map((feature) => (
             <CardWithWatermark key={feature.title} {...feature} />
           ))}
         </div>

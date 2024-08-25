@@ -1,6 +1,6 @@
-import { IconType } from 'react-icons';
+import { IconType } from "react-icons";
 
-import './Products.scss';
+import "./Products.scss";
 
 interface Props {
   title: string;

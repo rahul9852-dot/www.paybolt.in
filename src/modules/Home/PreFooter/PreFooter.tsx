@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { ImUserPlus } from 'react-icons/im';
-import { FaCheckCircle, FaMoneyCheckAlt } from 'react-icons/fa';
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { ImUserPlus } from "react-icons/im";
+import { FaCheckCircle, FaMoneyCheckAlt } from "react-icons/fa";
 
-import './PreFooter.scss';
+import "./PreFooter.scss";
 
 export const PreFooter = () => {
   return (
@@ -29,7 +29,8 @@ export const PreFooter = () => {
         </div>
         <Link
           href="/"
-          className="btn !bg-primary !text-background !px-4 !py-2 skew-x-6 md:skew-x-12">
+          className="btn !bg-primary !text-background !px-4 !py-2 skew-x-6 md:skew-x-12"
+        >
           <span>Get Started</span>
           <FaArrowRightLong className="relative top-[1px] text-xl" />
         </Link>

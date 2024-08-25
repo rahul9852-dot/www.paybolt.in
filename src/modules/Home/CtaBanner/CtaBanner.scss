@@ -3,11 +3,11 @@
 
   &::before {
     @apply content-[''] absolute inset-0 h-full w-full select-none pointer-events-none z-[1];
-    background: url('/images/shop.png') no-repeat center/cover;
+    background: url("/images/shop.png") no-repeat center/cover;
   }
 
   .cta {
-    background: url('/images/cta-bg.png');
+    background: url("/images/cta-bg.png");
     @apply relative z-[2] min-h-[400px] md:min-h-[500px] w-full md:w-3/4 lg:w-1/2 flex flex-col justify-start items-start gap-5 pl-2 pr-2 sm:pl-20 sm:pr-20 xl:pr-56 pt-16 md:pt-20 xl:pt-28 text-background bg-contain bg-no-repeat;
   }
 }

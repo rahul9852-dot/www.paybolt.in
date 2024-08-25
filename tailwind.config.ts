@@ -1,7 +1,7 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx,css,scss}'],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx,css,scss}"],
   theme: {
     extend: {
       colors: {
@@ -39,10 +39,10 @@ const config: Config = {
         primary: `var(--font-primary), sans-serif`,
       },
       zIndex: {
-        header: '100',
+        header: "100",
       },
       screens: {
-        xs: '376px',
+        xs: "376px",
       },
     },
   },

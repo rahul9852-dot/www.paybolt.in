@@ -1,3 +1,9 @@
+import PricingModule from "@/modules/Pricing/Pricing";
+
 export default () => {
-  return <section className="pt-20">Pricing</section>;
+  return (
+    <section>
+      <PricingModule />
+    </section>
+  );
 };

@@ -37,7 +37,7 @@
 
   &::before {
     @apply content-[''] absolute top-1/4 -right-5 h-24 w-24 opacity-20;
-    background: url('/images/logos/paybolt-icon.png') no-repeat center/contain;
+    background: url("/images/logos/paybolt-icon.png") no-repeat center/contain;
   }
 
   .feat {
@@ -45,7 +45,7 @@
 
     &::before {
       @apply content-[''] inline-block w-5 h-5 mr-1 absolute -left-7 top-[2px];
-      background: url('/images/next.svg') no-repeat center/contain;
+      background: url("/images/next.svg") no-repeat center/contain;
     }
   }
 }

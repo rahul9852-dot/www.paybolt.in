@@ -1,7 +1,7 @@
-import { HOME_FEATURES } from '@/constants/common.constant';
-import Image from 'next/image';
+"use client";
+import { HOME_FEATURES } from "@/constants/common.constant";
 
-import './Features.scss';
+import "./Features.scss";
 
 export const Features = () => {
   return (
@@ -19,11 +19,11 @@ export const Features = () => {
           </p>
         </div>
         <div className="bottom">
-          {HOME_FEATURES.map(({ title, description, icon }) => (
+          {HOME_FEATURES.map(({ title, description, icon: Icon }) => (
             <div key={title} className="feat-card">
               <div className="border-style text-background">
                 <div className="flex items-center gap-2">
-                  <Image src={icon} width={50} height={50} alt={title} />
+                  <Icon className="w-12 h-12" />
                   <h5 className="text-xl font-semibold">{title}</h5>
                 </div>
                 <p>{description}</p>

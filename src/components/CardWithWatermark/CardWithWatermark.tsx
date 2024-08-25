@@ -1,6 +1,6 @@
-import { IconType } from 'react-icons';
+import { IconType } from "react-icons";
 
-import './CardWithWatermark.scss';
+import "./CardWithWatermark.scss";
 
 interface Props {
   title: string;

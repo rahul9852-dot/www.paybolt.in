@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import { Features, Hero } from '@/modules/DynamicQrCollections';
-import { Steps } from '@/modules/DynamicQrCollections/Steps';
+import { Features, Hero } from "@/modules/DynamicQrCollections";
+import { Steps } from "@/modules/DynamicQrCollections/Steps";
 
-import phoneImg from '@public/images/phone-img.png';
-import boxPuzzle from '@public/images/boxes-puzzle.png';
-import { CustomerSaying } from '@/modules/Home/CustomerSaying';
+import phoneImg from "@public/images/phone-img.png";
+import boxPuzzle from "@public/images/boxes-puzzle.png";
+import { CustomerSaying } from "@/modules/Home/CustomerSaying";
 
 export default () => {
   return (
@@ -67,7 +67,8 @@ export default () => {
       <Steps
         className="clip-right !mt-0"
         image={boxPuzzle}
-        heading="Tally and Excel integration with">
+        heading="Tally and Excel integration with"
+      >
         <ol className="list">
           <li className="item">
             <i className="num">01</i>
