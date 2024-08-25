@@ -1,9 +1,16 @@
 "use client";
+
 import React, { useState } from "react";
 import { FAQConstants } from "@/constants/faq.constant";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { NO_FAQ_ROUTES } from "@/constants/common.constant";
 
-const Accordion: React.FC = () => {
+const FaqAccordion: React.FC = () => {
+  const pathname = usePathname();
+
+  if (NO_FAQ_ROUTES.includes(pathname)) return null;
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
@@ -37,4 +44,4 @@ const Accordion: React.FC = () => {
   );
 };
 
-export default Accordion;
+export default FaqAccordion;

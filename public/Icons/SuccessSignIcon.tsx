@@ -14,7 +14,7 @@ const SuccessSign: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       cy="29.5133"
       r="24.4907"
       stroke="#BB7C14"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <path
       d="M12.0221 18.1406L7.84332 22.2405L24.5586 45.2L31.2447 33.7202C43.2796 14.0406 54.646 3.10755 58.8248 0.100952H51.3029C43.9482 2.72489 29.8517 18.1406 23.7228 25.5204L12.0221 18.1406Z"
@@ -29,9 +29,9 @@ const SuccessSign: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
         y2="45.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.495" stop-color="#EEF4FF" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="white" />
+        <stop offset="0.495" stopColor="#EEF4FF" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
     </defs>
   </svg>

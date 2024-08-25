@@ -111,3 +111,5 @@ export const FOOTER_SOCIAL_LINKS = [
     icon: FaFacebookF,
   },
 ];
+
+export const NO_FAQ_ROUTES = ["/", "/contact"];

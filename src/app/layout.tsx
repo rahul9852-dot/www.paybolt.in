@@ -6,9 +6,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { primaryFont } from "@/utils/fonts";
 import { cn } from "@/utils/cn";
+import FaqAccordion from "@/components/FaqAccordion/FaqAccordion";
 
 import "./globals.scss";
-import Accordion from "@/components/Accordion/Accordion";
 
 export const metadata = metadataConfig[MetadataRoutes.HOME];
 
@@ -20,7 +20,7 @@ export default ({ children }: Readonly<PropsWithChildren>) => {
       >
         <Header />
         {children}
-        <Accordion />
+        <FaqAccordion />
         <Footer />
       </body>
     </html>
