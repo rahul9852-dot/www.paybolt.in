@@ -2,8 +2,9 @@ import InstantBankingBanner from "./InstantBankingBanner/InstantBankingBanner";
 import InstantBankingOutline from "./InstantBankingOutline/InstantBankingOutline";
 import InstantBankingVerification from "./InstantBankingVerification/InstantBankingVerification";
 import InstantBankingStatus from "./InstantBankingStatus/InstantBankingStatus";
-import BankingApi from "./bankingApiIntegeration/bankingApi";
+import BankingApi from "./BankingApiIntegeration/BankingApi";
 import './InstantBanking.scss';
+import { CustomerSaying } from "../Home/CustomerSaying";
 
 const InstantBanking = () => {
   return (
@@ -15,6 +16,7 @@ const InstantBanking = () => {
       <InstantBankingVerification />
       <InstantBankingStatus />
       <BankingApi />
+      <CustomerSaying/>
     </>
   )
 }

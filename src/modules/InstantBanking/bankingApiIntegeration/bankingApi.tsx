@@ -1,8 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
-import { FaArrowRightLong, FaUser } from 'react-icons/fa6';
-import CheckMarkIcon from '@public/Icons/CheckMarkSvg';
-import CardBgImage from '@public/images/Card-bg.png';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import UserIcon from "@public/Icons/User";
+import CheckMarkIcon from '@public/Icons/CheckMarkIcon';
 
 const BankingApi: React.FC = () => {
   const integrationPoints = [
@@ -11,7 +10,7 @@ const BankingApi: React.FC = () => {
   ];
 
   return (
-    <div className="instant-banking-integration bg-primary">
+    <div className="instant-banking-integration bg-primary mb-8">
       <div className="container mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="content">
@@ -35,28 +34,32 @@ const BankingApi: React.FC = () => {
               <FaArrowRightLong className="ml-2" />
             </button>
           </div>
-          <div className="relative h-[500px] w-full">
-            <Image
-              src={CardBgImage}
-              alt="Card background"
-              layout="fill"
-              objectFit="contain"
-              className="z-10"
-            />
-            <div className="absolute top-4 left-4 z-20 flex items-center">
-              <FaUser className="text-primary mr-2" />
-              <span className="text-primary font-semibold">Account Verification</span>
-            </div>
-            <div className="absolute top-4 right-4 z-20 bg-primary-50 px-2 py-1 rounded">
-              <span className="text-black text-sm">Passed</span>
-            </div>
-            <div className="absolute top-1/4 left-4 z-20 bg-white p-2 rounded flex items-center">
-              <CheckMarkIcon className="text-primary mr-2" width={20} height={20} />
-              <span className="text-primary">A/c Number Comparison</span>
-            </div>
-            <div className="absolute top-2/4 left-4 z-20 bg-white p-2 rounded flex items-center">
-              <CheckMarkIcon className="text-primary mr-2" width={20} height={20} />
-              <span className="text-primary">A/c Number Comparison</span>
+
+          <div className="relative w-full">
+            <div className="w-full bg-secondary-100 rounded-lg p-8 relative">
+              <div className="absolute top-4 right-4 bg-primary-100 rounded-lg p-2 shadow-md">
+                <p className="text-white font-medium">Passed</p>
+              </div>
+              <div className="flex items-center gap-12 mb-6">
+                <UserIcon className="mr-2" />
+                <h2 className="text-primary font-semibold text-2xl">Account Verification</h2>
+              </div>
+              <div className="mb-6">
+                <div className="flex items-center mb-2">
+                  <p className="text-primary w-48">A/c Number Comparison</p>
+                  <CheckMarkIcon className="ml-10" />
+                </div>
+                <div className="bg-white rounded h-4 w-48 mb-2"></div>
+                <div className="bg-white rounded h-4 w-44"></div>
+              </div>
+              <div>
+                <div className="flex items-center gap-12 mb-2">
+                  <p className="text-primary w-48">IFSC Comparison</p>
+                  <CheckMarkIcon  />
+                </div>
+                <div className="bg-white rounded h-4 w-48 mb-2"></div>
+                <div className="bg-white rounded h-4 w-44"></div>
+              </div>
             </div>
           </div>
         </div>

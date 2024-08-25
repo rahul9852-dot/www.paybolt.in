@@ -7,6 +7,8 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const InstantBankingStatus: React.FC = () => {
   return (
+
+    
     <div className="container mx-auto px-4 py-16">
       <h2 className="text-primary font-semibold text-3xl md:text-4xl mb-12 text-center">
         <span className="block">Know the accurate reason</span>

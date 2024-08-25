@@ -1,31 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 
 const CheckMarkIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" color='orange' {...props}>
 <rect width="34" height="34" fill="url(#pattern0_260_1472)"/>
 <defs>
 <pattern id="pattern0_260_1472" patternContentUnits="objectBoundingBox" width="1" height="1">
