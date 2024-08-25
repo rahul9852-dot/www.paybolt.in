@@ -1,20 +1,19 @@
 import MoneyTransferBanner from "./MoneyTransferBanner/MoneyTransferBanner";
-import './MoneyTransfer.scss'
+import "./MoneyTransfer.scss";
 import MoneyTransferOutlines from "./MoneyTransferOutline/MoneyTransferOutlines";
 import MoneyTransferFeatures from "./MoneyTransferFeatures/MoneyTransferFeatures";
 import PGAdvantage from "../../components/PGAdvantage/PGAdvantage";
-const MoneyTransfer = () =>{
-
+const MoneyTransfer = () => {
   return (
     <>
       <div className="money-transfer-banner pt-40">
-        <MoneyTransferBanner/>
+        <MoneyTransferBanner />
       </div>
-      <MoneyTransferOutlines/>
-      <MoneyTransferFeatures/>
-      <PGAdvantage/>
+      <MoneyTransferOutlines />
+      <MoneyTransferFeatures />
+      <PGAdvantage />
     </>
-  )
-}
+  );
+};
 
 export default MoneyTransfer;

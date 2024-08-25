@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { Features } from '@modules/UpiQrCollections';
-import { CustomerSaying } from '@modules/Home/CustomerSaying';
-import { ProductCard } from './ProductCard';
-import { PRODUCTS_FEATURES } from '@/constants/products.constant';
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Features } from "@modules/UpiQrCollections";
+import { CustomerSaying } from "@modules/Home/CustomerSaying";
+import { ProductCard } from "./ProductCard";
+import { PRODUCTS_FEATURES } from "@/constants/products.constant";
 
-import productHero from '@public/images/products-hero.png';
+import productHero from "@public/images/products-hero.png";
 
-import './Products.scss';
+import "./Products.scss";
 
 export const Products = () => {
   return (
@@ -51,7 +51,7 @@ export const Products = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {PRODUCTS_FEATURES.map(feature => (
+          {PRODUCTS_FEATURES.map((feature) => (
             <ProductCard key={feature.title} {...feature} />
           ))}
         </div>

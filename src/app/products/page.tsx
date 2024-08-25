@@ -1,4 +1,4 @@
-import { Products } from '@/modules/Products';
+import { Products } from "@/modules/Products";
 
 export default () => {
   return <Products />;

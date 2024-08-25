@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import { GradientCard } from '@/components/GradientCard';
-import { BENEFITS_CARD } from '@/constants/upi-qr-collections.constant';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { BenefitCard } from '@/components/BenefitCard';
-import { DYNAMIC_FEAT_CARDS } from '@/constants/dynamic-qr-collections.constant';
+import Link from "next/link";
+import { GradientCard } from "@/components/GradientCard";
+import { BENEFITS_CARD } from "@/constants/upi-qr-collections.constant";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { BenefitCard } from "@/components/BenefitCard";
+import { DYNAMIC_FEAT_CARDS } from "@/constants/dynamic-qr-collections.constant";
 
-import './Features.scss';
+import "./Features.scss";
 
 export const Features = () => {
   return (
@@ -15,14 +15,15 @@ export const Features = () => {
           Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 min-h-[160px]">
-          {DYNAMIC_FEAT_CARDS.map(feat => (
+          {DYNAMIC_FEAT_CARDS.map((feat) => (
             <GradientCard key={feat.title} {...feat} />
           ))}
         </div>
         <div className="flex justify-center items-center my-24">
           <Link
             href="/"
-            className="btn !bg-primary !text-background !px-4 !py-2">
+            className="btn !bg-primary !text-background !px-4 !py-2"
+          >
             <span>Get Started</span>
             <FaArrowRightLong className="relative top-[1px] text-xl" />
           </Link>

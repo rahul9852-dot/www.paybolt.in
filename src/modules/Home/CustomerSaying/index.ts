@@ -1,1 +1,1 @@
-export { CustomerSaying } from './CustomerSaying';
+export { CustomerSaying } from "./CustomerSaying";

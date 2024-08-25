@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import connectedBanking from '@public/images/connected-banking.png';
+import connectedBanking from "@public/images/connected-banking.png";
 // import logoLightFull from '@public/images/logos/light-full.svg';
-import { PreFooter } from '@modules/Home/PreFooter';
+import { PreFooter } from "@modules/Home/PreFooter";
 
-import './ConnectedBanking.scss';
+import "./ConnectedBanking.scss";
 
 export const ConnectedBanking = () => {
   return (

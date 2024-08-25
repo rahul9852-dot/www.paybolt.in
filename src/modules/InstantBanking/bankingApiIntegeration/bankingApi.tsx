@@ -1,12 +1,12 @@
-import React from 'react';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 import UserIcon from "@public/Icons/User";
-import CheckMarkIcon from '@public/Icons/CheckMarkIcon';
+import CheckMarkIcon from "@public/Icons/CheckMarkIcon";
 
 const BankingApi: React.FC = () => {
   const integrationPoints = [
-    'Highly reliable & secure',
-    'Webhooks for real-time status'
+    "Highly reliable & secure",
+    "Webhooks for real-time status",
   ];
 
   return (
@@ -18,7 +18,10 @@ const BankingApi: React.FC = () => {
               <span className="block">A single API integration</span>
               <span className="block">is all you need to get started!</span>
             </h2>
-            <p className="mb-8 text-white">The most seamless & simple-to-integrate account verification APIs ever.</p>
+            <p className="mb-8 text-white">
+              The most seamless & simple-to-integrate account verification APIs
+              ever.
+            </p>
             <div className="integration-points mb-8">
               {integrationPoints.map((point, index) => (
                 <div key={index} className="flex items-start mb-4">
@@ -42,7 +45,9 @@ const BankingApi: React.FC = () => {
               </div>
               <div className="flex items-center gap-12 mb-6">
                 <UserIcon className="mr-2" />
-                <h2 className="text-primary font-semibold text-2xl">Account Verification</h2>
+                <h2 className="text-primary font-semibold text-2xl">
+                  Account Verification
+                </h2>
               </div>
               <div className="mb-6">
                 <div className="flex items-center mb-2">
@@ -55,7 +60,7 @@ const BankingApi: React.FC = () => {
               <div>
                 <div className="flex items-center gap-12 mb-2">
                   <p className="text-primary w-48">IFSC Comparison</p>
-                  <CheckMarkIcon  />
+                  <CheckMarkIcon />
                 </div>
                 <div className="bg-white rounded h-4 w-48 mb-2"></div>
                 <div className="bg-white rounded h-4 w-44"></div>

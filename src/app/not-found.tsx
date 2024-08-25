@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default () => {
   return (
@@ -10,10 +10,10 @@ export default () => {
         </h1>
         <p className="mt-5">The page you are looking for does not exist.</p>
         <p>
-          If the problem persists, please{' '}
+          If the problem persists, please{" "}
           <Link href="/contact" className="text-primary font-semibold italic">
             contact us
-          </Link>{' '}
+          </Link>{" "}
           for support.
         </p>
 

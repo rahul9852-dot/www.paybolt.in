@@ -1,12 +1,12 @@
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import stepImg from '@public/images/steps.png';
+import stepImg from "@public/images/steps.png";
 // import logoLightFull from '@public/images/logos/light-full.svg';
-import { cn } from '@/utils/cn';
+import { cn } from "@/utils/cn";
 
-import './Steps.scss';
+import "./Steps.scss";
 
 interface Props {
   className?: string;
@@ -17,7 +17,7 @@ interface Props {
 
 export const Steps = ({ className, image, children, heading }: Props) => {
   return (
-    <section className={cn('steps-wrapper', className)}>
+    <section className={cn("steps-wrapper", className)}>
       <div className="steps">
         <div className="left">
           <h3 className="text-3xl font-semibold max-w-md text-left pb-5">

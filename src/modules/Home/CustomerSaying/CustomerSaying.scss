@@ -7,7 +7,9 @@
     .card {
       @apply h-[230px] w-[350px] rounded-lg relative bg-[#845885] text-background py-5 px-8;
 
-      box-shadow: 0 0 10px #501e7c, 0 0 15px #9968c4;
+      box-shadow:
+        0 0 10px #501e7c,
+        0 0 15px #9968c4;
 
       &::before {
         @apply content-[''] absolute -inset-[3px] rounded-lg z-[-1];

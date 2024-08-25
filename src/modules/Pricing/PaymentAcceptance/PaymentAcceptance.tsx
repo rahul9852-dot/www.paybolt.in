@@ -6,20 +6,22 @@ const PaymentAcceptance = () => {
     "Coupon feature to offer cashback and discounts",
     "SMS, Email and Whatsapp integration within our APIs",
     "All products for collections will be available at the same price with no extra charges",
-    "Payment modes such as Cards (Visa, Master, Maestro, Rupay, Commercial cards), Wallets, UPI and Netbanking, Buy now pay later payment instruments shall be extended"
+    "Payment modes such as Cards (Visa, Master, Maestro, Rupay, Commercial cards), Wallets, UPI and Netbanking, Buy now pay later payment instruments shall be extended",
   ];
 
   return (
     <div className="flex flex-col items-center justify-center px-4 py-16">
       <div className="max-w-6xl w-full">
-        <h1 className="text-center font-semibold mb-16 text-2xl md:text-3xl">Payment Acceptance</h1>
+        <h1 className="text-center font-semibold mb-16 text-2xl md:text-3xl">
+          Payment Acceptance
+        </h1>
         <p className="text-primary text-sm md:text-base lg:text-lg text-center md:text-left mb-8">
-          Paybolt offers customized pricing suitable for every business need. 
-          The pricing is applicable for products and features that solve 
-          problems around payment collections. Paybolt value proposition 
-          is to remove friction after a payment is done. Our products and 
-          solutions are focused in creating mechanism around payments 
-          where the following is offered –
+          Paybolt offers customized pricing suitable for every business need.
+          The pricing is applicable for products and features that solve
+          problems around payment collections. Paybolt value proposition is to
+          remove friction after a payment is done. Our products and solutions
+          are focused in creating mechanism around payments where the following
+          is offered –
         </p>
         <div className="grid md:grid-cols-2 gap-8 pt-20">
           <div className="space-y-6">
@@ -58,7 +60,7 @@ const PaymentAcceptance = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default PaymentAcceptance;

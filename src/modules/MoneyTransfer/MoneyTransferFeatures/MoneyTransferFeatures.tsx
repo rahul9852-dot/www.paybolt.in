@@ -1,6 +1,9 @@
 import { BenefitCard } from "@/components/BenefitCard";
 import { GradientCard } from "@/components/GradientCard";
-import { MoneyTransferBenefitsConstant, MoneyTransferFeaturesCardConstants } from "@/constants/money-transfer.constant";
+import {
+  MoneyTransferBenefitsConstant,
+  MoneyTransferFeaturesCardConstants,
+} from "@/constants/money-transfer.constant";
 import { CgArrowRight } from "react-icons/cg";
 
 const MoneyTransferFeatures = () => {
@@ -12,7 +15,7 @@ const MoneyTransferFeatures = () => {
             Features
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-            {MoneyTransferFeaturesCardConstants.map(feat => (
+            {MoneyTransferFeaturesCardConstants.map((feat) => (
               <GradientCard key={feat.title} {...feat} />
             ))}
           </div>
@@ -36,7 +39,7 @@ const MoneyTransferFeatures = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default MoneyTransferFeatures;

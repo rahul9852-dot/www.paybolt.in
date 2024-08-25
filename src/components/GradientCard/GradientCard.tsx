@@ -1,8 +1,8 @@
-import { IconType } from 'react-icons';
-import arrow from '@public/images/arrow.svg';
+import { IconType } from "react-icons";
+import arrow from "@public/images/arrow.svg";
 
-import './GradientCard.scss';
-import Image from 'next/image';
+import "./GradientCard.scss";
+import Image from "next/image";
 
 interface Props {
   title: string;

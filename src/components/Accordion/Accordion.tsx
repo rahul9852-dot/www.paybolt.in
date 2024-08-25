@@ -1,7 +1,7 @@
-"use client"
-import React, { useState } from 'react';
-import { FAQConstants } from '@/constants/faq.constant';
-import { FaPlus, FaMinus } from 'react-icons/fa';
+"use client";
+import React, { useState } from "react";
+import { FAQConstants } from "@/constants/faq.constant";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Accordion: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -29,9 +29,7 @@ const Accordion: React.FC = () => {
             )}
           </button>
           {openIndex === index && (
-            <div className="p-4 bg-primary-50 text-primary">
-              {item.answer}
-            </div>
+            <div className="p-4 bg-primary-50 text-primary">{item.answer}</div>
           )}
         </div>
       ))}

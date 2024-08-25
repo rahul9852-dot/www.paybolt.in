@@ -19,9 +19,9 @@ const PosServiceOutline = () => {
         Streamline Your Business Operations with Our Advanced POS System
       </h2>
       <p className="text-center mb-12 max-w-2xl mx-auto">
-        Our POS system offers a comprehensive solution for businesses of all sizes, 
-        combining cutting-edge technology with user-friendly interfaces to enhance 
-        your daily operations and boost customer satisfaction.
+        Our POS system offers a comprehensive solution for businesses of all
+        sizes, combining cutting-edge technology with user-friendly interfaces
+        to enhance your daily operations and boost customer satisfaction.
       </p>
 
       <div className="grid md:grid-cols-2 gap-8">
@@ -33,15 +33,13 @@ const PosServiceOutline = () => {
             height={500}
           />
           <p className="mt-4 text-center">
-            Accept payments from your customers through credit cards, debit cards and dynamic UPI QR code
+            Accept payments from your customers through credit cards, debit
+            cards and dynamic UPI QR code
           </p>
         </div>
         <div className="flex flex-col gap-4 md:self-start">
           {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="group relative overflow-hidden"
-            >
+            <div key={index} className="group relative overflow-hidden">
               <div className="bg-primary-50 text-primary p-4 pl-12 rounded-lg transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                 <p>{feature}</p>
               </div>

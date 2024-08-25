@@ -1,6 +1,9 @@
 import { BenefitCard } from "@/components/BenefitCard";
 import { GradientCard } from "@/components/GradientCard";
-import { PosServiceBeneFits, PosServiceConstants } from "@/constants/pos-services.constant";
+import {
+  PosServiceBeneFits,
+  PosServiceConstants,
+} from "@/constants/pos-services.constant";
 import { CgArrowRight } from "react-icons/cg";
 
 const POSFeature = () => {
@@ -12,7 +15,7 @@ const POSFeature = () => {
             Features
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-            {PosServiceConstants.map(feat => (
+            {PosServiceConstants.map((feat) => (
               <GradientCard key={feat.title} {...feat} />
             ))}
           </div>
@@ -24,7 +27,6 @@ const POSFeature = () => {
             <CgArrowRight />
           </button>
         </div>
-
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto py-10">
           {PosServiceBeneFits.map((benefits, idx) => (
@@ -38,7 +40,7 @@ const POSFeature = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default POSFeature;

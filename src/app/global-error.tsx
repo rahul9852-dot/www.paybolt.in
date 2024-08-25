@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default () => {
   return (

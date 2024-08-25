@@ -12,7 +12,9 @@
 
         &::before {
           @apply content-[''] absolute h-7 w-7 -top-1.5 -left-2.5 rounded-full border-2 border-[#2f5fff97] opacity-80 select-none;
-          box-shadow: 0 0 5px #2f5eff, inset 0 0 5px #2f5eff;
+          box-shadow:
+            0 0 5px #2f5eff,
+            inset 0 0 5px #2f5eff;
         }
       }
     }

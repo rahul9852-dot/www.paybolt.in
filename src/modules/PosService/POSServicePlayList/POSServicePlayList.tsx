@@ -1,13 +1,14 @@
-import Image from 'next/image';
-import { FaPlay } from 'react-icons/fa';
-import PlaylistImage from '@public/images/reliable-pos.png'; // Adjust this path as needed
-import MusicIcon from '@public/Icons/MusicIcon';
+import Image from "next/image";
+import { FaPlay } from "react-icons/fa";
+import PlaylistImage from "@public/images/reliable-pos.png"; // Adjust this path as needed
+import MusicIcon from "@public/Icons/MusicIcon";
 
 const POSServicePlayList = () => {
   return (
     <>
       <h2 className="text-primary text-3xl md:text-4xl font-semibold text-center mb-2 max-w-3xl mx-auto">
-        Powerful, secure and reliable POS machine      </h2>
+        Powerful, secure and reliable POS machine{" "}
+      </h2>
       <div className="flex justify-center">
         <div className="relative w-full max-w-4xl aspect-video">
           <Image

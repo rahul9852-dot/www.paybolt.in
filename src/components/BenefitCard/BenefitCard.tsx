@@ -1,4 +1,4 @@
-import './BenefitCard.scss';
+import "./BenefitCard.scss";
 
 interface Props {
   title: string;

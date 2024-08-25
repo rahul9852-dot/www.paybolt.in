@@ -1,17 +1,17 @@
-import PaymentAcceptance from './PaymentAcceptance/PaymentAcceptance';
-import './Pricing.scss';
-import PricingBanner from './PricingBanner/PricingBanner';
-import PricingPlan from './PricingPlan/PricingPlan';
-const PricingModule = () =>{
+import PaymentAcceptance from "./PaymentAcceptance/PaymentAcceptance";
+import "./Pricing.scss";
+import PricingBanner from "./PricingBanner/PricingBanner";
+import PricingPlan from "./PricingPlan/PricingPlan";
+const PricingModule = () => {
   return (
     <>
       <div className="pricing-banner pt-40">
-        <PricingBanner/>
+        <PricingBanner />
       </div>
-      <PaymentAcceptance/>
-      <PricingPlan/>
+      <PaymentAcceptance />
+      <PricingPlan />
     </>
-  )
-}
+  );
+};
 
 export default PricingModule;

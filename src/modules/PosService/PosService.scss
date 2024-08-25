@@ -1,6 +1,12 @@
 .pos-banner {
   background: linear-gradient(to right, #f7faff, #f7faff);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2px), calc(100% - 100px) 100%, 0 calc(100% - 50px));
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 2px),
+    calc(100% - 100px) 100%,
+    0 calc(100% - 50px)
+  );
   position: relative;
 }
 
@@ -23,7 +29,7 @@ body:has(.pos-banner) {
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

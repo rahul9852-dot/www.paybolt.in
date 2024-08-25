@@ -1,7 +1,5 @@
-import PosService from "@/modules/PosService/PosService"
+import PosService from "@/modules/PosService/PosService";
 
 export default () => {
-  return (
-    <PosService/>
-  )
-}
+  return <PosService />;
+};

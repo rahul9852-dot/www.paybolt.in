@@ -1,6 +1,12 @@
 .pricing-banner {
   @apply bg-primary-50;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2px), calc(100% - 100px) 100%, 0 calc(100% - 50px));
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 2px),
+    calc(100% - 100px) 100%,
+    0 calc(100% - 50px)
+  );
   position: relative;
 
   &::before {
@@ -8,7 +14,7 @@
     // Adjust the height value based on your header height
   }
 
-  >* {
+  > * {
     @apply relative bg-primary-50 z-[3];
   }
 }
